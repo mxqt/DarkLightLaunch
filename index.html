@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
     <title>DarkLight Experience</title>
     <link rel="stylesheet" href="https://use.typekit.net/efe5rwd.css">
+
     <style>
         * {
             margin: 0;
@@ -75,7 +77,10 @@
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin: 20px 0;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .social-icons a {
@@ -117,16 +122,17 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            align-self: stretch;
             transition: transform 0.3s ease;
             /* Smooth transition */
         }
 
         .ticket-button {
-            position: absolute;
-            bottom: 15px;
-            left: 50%;
-            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transform: translateX(-50%); */
+            /* margin: 20px 0; */
+            max-width: fit-content;
         }
 
         .floating-buttons {
@@ -137,10 +143,10 @@
             gap: 10px;
         }
 
-        .ticket-button:hover {
-            transform: translateX(-50%) scale(1.1);
+        /* .ticket-button:hover {
+            /* transform: translateX(-50%) scale(1.1); */
             /* Ensures it stays centered */
-        }
+        
 
 
         button:hover {
@@ -172,11 +178,11 @@
                 font-size: 0.8rem;
             }
 
-            .ticket-button {
+            .social-icons{
                 position: fixed;
-                bottom: 15px;
-                left: 15px;
-                transform: none;
+bottom: 15px;
+left: 15px;
+transform: none;
             }
 
             .floating-buttons {
@@ -212,18 +218,22 @@
             2-4th May 2025<br>
             9/11 Durham Lane, Auckland
         </h1>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/darklight_experience/"><img src="images/Instagram.svg"
-                    alt="Instagram"></a>
-            <a href="https://www.facebook.com/experiencedarklight/"><img src="images/Facebook.svg" alt="Facebook"></a>
-        </div>
+        <button class="ticket-button">
+            <h2>
+                <a href="https://www.iticket.co.nz/events/2025/may/darklight"
+                    style="text-decoration: none; color: inherit;">Tickets</a>
+            </h2>
+        </button>
+        
     </div>
-    <button class="ticket-button">
-        <h2>
-            <a href="https://www.iticket.co.nz/events/2025/may/darklight"
-                style="text-decoration: none; color: inherit;">Tickets</a>
-        </h2>
-    </button>
+
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/darklight_experience/"><img src="images/Instagram.svg"
+                alt="Instagram"></a>
+        <a href="https://www.facebook.com/experiencedarklight/"><img src="images/Facebook.svg" alt="Facebook"></a>
+    </div>
+
     <div class="floating-buttons">
         <button>
             <h2>
@@ -235,6 +245,11 @@
                 <a href="faq.html" style="text-decoration: none; color: inherit;">FAQs</a>
             </h2>
         </button>
+        <!-- <button> -->
+        <!-- <a href="https://www.instagram.com/darklight_experience/"><img src="images/Instagram.svg"
+            alt="Instagram"></a></button>
+            <button>  <a href="https://www.facebook.com/experiencedarklight/"><img src="images/Facebook.svg" alt="Facebook"></a></button>
+   -->
     </div>
 </body>
 
