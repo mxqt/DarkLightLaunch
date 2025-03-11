@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             background: url('images/background-image.jpg') no-repeat center center/cover;
             height: 100vh;
@@ -56,37 +58,44 @@
             gap: 20px;
             flex-shrink: 0;
         }
+
         h1 {
             font-size: 2rem;
             font-weight: 400;
             letter-spacing: .15rem;
         }
+
         h2 {
             font-size: .8rem;
             letter-spacing: .08rem;
             font-weight: 400;
         }
+
         .social-icons {
             display: flex;
             justify-content: center;
             gap: 10px;
             margin: 20px 0;
         }
-        .social-icons a {
-    height: 35px;
-    width: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    transition: transform 0.3s ease; /* Smooth transition */
-}
 
-.social-icons a:hover {
-    transform: scale(1.1); /* Increase size by about 10px */
-    background: rgba(255, 255, 255, 0.3);
-}
+        .social-icons a {
+            height: 35px;
+            width: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            /* Increase size by about 10px */
+            background: rgba(255, 255, 255, 0.3);
+        }
+
         .social-icons img {
             width: 15px;
             height: 15px;
@@ -109,7 +118,8 @@
             align-items: center;
             gap: 10px;
             align-self: stretch;
-            transition: transform 0.3s ease; /* Smooth transition */
+            transition: transform 0.3s ease;
+            /* Smooth transition */
         }
 
         .ticket-button {
@@ -128,25 +138,27 @@
         }
 
         .ticket-button:hover {
-    transform: translateX(-50%) scale(1.1); /* Ensures it stays centered */
-}
+            transform: translateX(-50%) scale(1.1);
+            /* Ensures it stays centered */
+        }
 
 
-        button:hover{
+        button:hover {
             transform: scale(1.1);
             background: rgba(255, 255, 255, 0.3);
         }
 
-      
+
 
         @media (max-width: 768px) {
 
             .content {
-            display: flex;
-            width: 100%;
-            padding-left: 15px;
-            padding-right: 15px;
+                display: flex;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
             }
+
             h1 {
                 font-size: 1.2rem;
             }
@@ -172,21 +184,19 @@
 
 
             .ticket-button:hover {
-    transform: none;
-    background: rgba(255, 255, 255, 0.3);
+                transform: none;
+                background: rgba(255, 255, 255, 0.3);
             }
 
-    button:hover{
-            transform: none;
-            background: rgba(255, 255, 255, 0.3);
+            button:hover {
+                transform: none;
+                background: rgba(255, 255, 255, 0.3);
+            }
+
         }
-
-}
-
-
-  
     </style>
 </head>
+
 <body>
     <div class="logo">
         <img src="images/logo.svg" alt="Darklight Logo" width="100%">
@@ -198,19 +208,29 @@
             9/11 Durham Lane, Auckland
         </h1>
         <div class="social-icons">
-            <a href="https://www.instagram.com/darklight_experience/"><img src="images/Instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/darklight_experience/"><img src="images/Instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://www.facebook.com/experiencedarklight/"><img src="images/Facebook.svg" alt="Facebook"></a>
         </div>
     </div>
-    <button class="ticket-button"><h2>
-        <a href="https://www.iticket.co.nz/events/2025/may/darklight" style="text-decoration: none; color: inherit;">Tickets</a></h2></button>
+    <button class="ticket-button">
+        <h2>
+            <a href="https://www.iticket.co.nz/events/2025/may/darklight"
+                style="text-decoration: none; color: inherit;">Tickets</a>
+        </h2>
+    </button>
     <div class="floating-buttons">
-        <button><h2>
-            <a href="about.html" style="text-decoration: none; color: inherit;">About</a></h2>
+        <button>
+            <h2>
+                <a href="about.html" style="text-decoration: none; color: inherit;">About</a>
+            </h2>
         </button>
-        <button><h2>
-            <a href="faq.html" style="text-decoration: none; color: inherit;">FAQs</a>
-        </h2></button>
+        <button>
+            <h2>
+                <a href="faq.html" style="text-decoration: none; color: inherit;">FAQs</a>
+            </h2>
+        </button>
     </div>
 </body>
+
 </html>
